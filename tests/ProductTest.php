@@ -21,7 +21,7 @@ class ProductTest extends TestCase
     {
         $result = $this->product->loadData();
         $this->assertIsArray($result);
-        $this->assertGreaterThan(100, count($result), 'Должен быть хотя бы 1 товар');
+        $this->assertGreaterThan(0, count($result), 'Должен быть хотя бы 1 товар');
     }
 
     /**
